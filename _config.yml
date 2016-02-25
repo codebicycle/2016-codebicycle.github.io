@@ -1,0 +1,34 @@
+# Basic
+name:               "codebicycle"
+
+# URL
+baseurl:            ""
+permalink:          /:title
+
+# Markdown
+markdown:           redcarpet
+
+redcarpet:
+  extensions: ["autolink"]
+
+# Navigation
+nav:
+
+# Sass
+sass:
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
