@@ -6,10 +6,7 @@ baseurl:            ""
 permalink:          /:title
 
 # Markdown
-markdown:           redcarpet
-
-redcarpet:
-  extensions: ["autolink"]
+markdown:           kramdown
 
 # Navigation
 nav:
