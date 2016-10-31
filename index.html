@@ -28,7 +28,12 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h2>
     <div class="list-post-date">
+    {% if post.update %}
+      <time>{{ post.update | date_to_string }}</time>
+      <span>update</span>
+    {% else %}
       <time>{{ post.date | date_to_string }}</time>
+    {% endif %}
     </div>
   </div>
 {% endfor %}

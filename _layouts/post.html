@@ -9,7 +9,12 @@ layout: default
 <div class="content post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-date">
+  {% if page.update %}
+    <time>{{ page.update | date_to_string }}</time>
+    <span>update</span>
+  {% else %}
     <time>{{ page.date | date_to_string }}</time>
+  {% endif %}
   </div>
   {{ content }}
 </div>

@@ -460,3 +460,8 @@ tbody tr:nth-child(odd) th {
     margin-left: 2.5rem;
   }   
 }
+
+.list-post-date > span,
+.post-date > span {
+    margin-left: 1em;
+}
