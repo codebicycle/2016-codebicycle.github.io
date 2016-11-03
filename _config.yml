@@ -8,6 +8,10 @@ permalink:          /:title
 # Markdown
 markdown:           kramdown
 
+kramdown:
+  input:            GFM
+  # hard_wrap:        true
+
 # Navigation
 nav:
 
