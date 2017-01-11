@@ -9,8 +9,8 @@ permalink:          /:title
 markdown:           kramdown
 
 kramdown:
-  input:            GFM
-  # hard_wrap:        true
+  input: GFM
+  hard_wrap: false
 
 # Navigation
 nav:
@@ -33,3 +33,7 @@ defaults:
       type:         "posts"
     values:
       layout:       "post"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
